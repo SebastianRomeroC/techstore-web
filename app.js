@@ -6,7 +6,7 @@ let total = 0;
 document.querySelectorAll(".btn-comprar").forEach((boton) => {
   boton.addEventListener("click", () => {
     cantidadArticulos += 1;
-    total += Number(boton.dataset.precio);
+    total += NaN;
 
     contadorCarrito.textContent = String(cantidadArticulos);
     totalCarrito.textContent = String(total);
