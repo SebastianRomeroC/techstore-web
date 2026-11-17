@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TechStore</title>
+  <link rel="stylesheet" href="assets/theme/theme.css">
+</head>
+<body>
+  <header>
+    <h1>TechStore</h1>
+    <button id="btn-tema" type="button">Modo Oscuro</button>
+  </header>
+
+  <main>
+    <section aria-labelledby="productos-titulo">
+      <h2 id="productos-titulo">Productos</h2>
+      <article>
+        <h3>Laptop</h3>
+        <p>Precio: $1,200</p>
+        <button class="btn-comprar" type="button" data-precio="1200">Comprar</button>
+      </article>
+      <article>
+        <h3>Teclado Mecánico</h3>
+        <p>Precio: $120</p>
+        <button class="btn-comprar" type="button" data-precio="120">Comprar</button>
+      </article>
+      <article>
+        <h3>Monitor</h3>
+        <p>Precio: $350</p>
+        <button class="btn-comprar" type="button" data-precio="350">Comprar</button>
+      </article>
+    </section>
+
+    <section aria-labelledby="carrito-titulo">
+      <h2 id="carrito-titulo">Resumen del carrito</h2>
+      <p>Artículos: <span id="contador-carrito">0</span></p>
+      <p>Total a pagar: <span id="total-carrito">0</span></p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
