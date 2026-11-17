@@ -14,5 +14,6 @@ document.querySelectorAll(".btn-comprar").forEach((boton) => {
 });
 
 document.getElementById("btn-tema").addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
   console.log("Pendiente modo oscuro");
 });
