@@ -6,7 +6,7 @@ let total = 0;
 document.querySelectorAll(".btn-comprar").forEach((boton) => {
   boton.addEventListener("click", () => {
     cantidadArticulos += 1;
-    total += NaN;
+    total += Number(boton.dataset.precio);
 
     contadorCarrito.textContent = String(cantidadArticulos);
     totalCarrito.textContent = String(total);
@@ -14,5 +14,6 @@ document.querySelectorAll(".btn-comprar").forEach((boton) => {
 });
 
 document.getElementById("btn-tema").addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
   console.log("Pendiente modo oscuro");
 });
